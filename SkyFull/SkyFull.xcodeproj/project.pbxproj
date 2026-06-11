@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E230B4B2FDA3C7E0050F49E /* SkyFullApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B4A2FDA3C7E0050F49E /* SkyFullApp.swift */; };
+		3E230B512FDA3C7F0050F49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E230B502FDA3C7F0050F49E /* Assets.xcassets */; };
+		3E230B542FDA3C7F0050F49E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E230B532FDA3C7F0050F49E /* Preview Assets.xcassets */; };
+		3E230B5E2FDA3C7F0050F49E /* SkyFullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B5D2FDA3C7F0050F49E /* SkyFullTests.swift */; };
+		3E230B682FDA3C800050F49E /* SkyFullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B672FDA3C800050F49E /* SkyFullUITests.swift */; };
+		3E230B6A2FDA3C800050F49E /* SkyFullUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B692FDA3C800050F49E /* SkyFullUITestsLaunchTests.swift */; };
+		3E230B792FDA3C980050F49E /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B772FDA3C980050F49E /* AppAssembly.swift */; };
+		3E230B7A2FDA3C980050F49E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B782FDA3C980050F49E /* DIContainer.swift */; };
+		3E230B7E2FDA3CA40050F49E /* SwiftDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B7C2FDA3CA40050F49E /* SwiftDataModels.swift */; };
+		3E230B7F2FDA3CA40050F49E /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B7D2FDA3CA40050F49E /* WeatherModels.swift */; };
+		3E230B832FDA3CA90050F49E /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B812FDA3CA90050F49E /* WeatherService.swift */; };
+		3E230B842FDA3CA90050F49E /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B822FDA3CA90050F49E /* WeatherServiceProtocol.swift */; };
+		3E230B872FDA3CB00050F49E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230B862FDA3CB00050F49E /* WeatherViewModel.swift */; };
+		3E230B9F2FDA3E130050F49E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 3E230B9E2FDA3E130050F49E /* Swinject */; };
+		3E230BA32FDA3E8F0050F49E /* WeatherRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BA12FDA3E8F0050F49E /* WeatherRepositoryProtocol.swift */; };
+		3E230BA42FDA3E8F0050F49E /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BA22FDA3E8F0050F49E /* WeatherRepository.swift */; };
+		3E230BF92FDA42D20050F49E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BEF2FDA42D20050F49E /* WeatherView.swift */; };
+		3E230BFA2FDA42D20050F49E /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF02FDA42D20050F49E /* LocationSearchView.swift */; };
+		3E230BFB2FDA42D20050F49E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF12FDA42D20050F49E /* LocationDetailView.swift */; };
+		3E230BFC2FDA42D20050F49E /* WeatherBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF22FDA42D20050F49E /* WeatherBackground.swift */; };
+		3E230BFD2FDA42D20050F49E /* TopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF42FDA42D20050F49E /* TopSectionView.swift */; };
+		3E230BFE2FDA42D20050F49E /* ForecastSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF52FDA42D20050F49E /* ForecastSectionView.swift */; };
+		3E230BFF2FDA42D20050F49E /* BottomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF62FDA42D20050F49E /* BottomSectionView.swift */; };
+		3E230C002FDA42D20050F49E /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF72FDA42D20050F49E /* HourlyForecastView.swift */; };
+		3E230C012FDA42D20050F49E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E230BF82FDA42D20050F49E /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E230B5A2FDA3C7F0050F49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E230B3F2FDA3C7D0050F49E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E230B462FDA3C7E0050F49E;
+			remoteInfo = SkyFull;
+		};
+		3E230B642FDA3C800050F49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E230B3F2FDA3C7D0050F49E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E230B462FDA3C7E0050F49E;
+			remoteInfo = SkyFull;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E230B472FDA3C7E0050F49E /* SkyFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E230B4A2FDA3C7E0050F49E /* SkyFullApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFullApp.swift; sourceTree = "<group>"; };
+		3E230B502FDA3C7F0050F49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E230B532FDA3C7F0050F49E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E230B592FDA3C7F0050F49E /* SkyFullTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyFullTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E230B5D2FDA3C7F0050F49E /* SkyFullTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFullTests.swift; sourceTree = "<group>"; };
+		3E230B632FDA3C800050F49E /* SkyFullUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyFullUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E230B672FDA3C800050F49E /* SkyFullUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFullUITests.swift; sourceTree = "<group>"; };
+		3E230B692FDA3C800050F49E /* SkyFullUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFullUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E230B772FDA3C980050F49E /* AppAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		3E230B782FDA3C980050F49E /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		3E230B7C2FDA3CA40050F49E /* SwiftDataModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
+		3E230B7D2FDA3CA40050F49E /* WeatherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
+		3E230B812FDA3CA90050F49E /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		3E230B822FDA3CA90050F49E /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		3E230B862FDA3CB00050F49E /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		3E230BA12FDA3E8F0050F49E /* WeatherRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryProtocol.swift; sourceTree = "<group>"; };
+		3E230BA22FDA3E8F0050F49E /* WeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		3E230BEF2FDA42D20050F49E /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		3E230BF02FDA42D20050F49E /* LocationSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		3E230BF12FDA42D20050F49E /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		3E230BF22FDA42D20050F49E /* WeatherBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBackground.swift; sourceTree = "<group>"; };
+		3E230BF42FDA42D20050F49E /* TopSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSectionView.swift; sourceTree = "<group>"; };
+		3E230BF52FDA42D20050F49E /* ForecastSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSectionView.swift; sourceTree = "<group>"; };
+		3E230BF62FDA42D20050F49E /* BottomSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSectionView.swift; sourceTree = "<group>"; };
+		3E230BF72FDA42D20050F49E /* HourlyForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
+		3E230BF82FDA42D20050F49E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E230B442FDA3C7E0050F49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E230B9F2FDA3E130050F49E /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B562FDA3C7F0050F49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B602FDA3C800050F49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E230B3E2FDA3C7D0050F49E = {
+			isa = PBXGroup;
+			children = (
+				3E230B492FDA3C7E0050F49E /* SkyFull */,
+				3E230B5C2FDA3C7F0050F49E /* SkyFullTests */,
+				3E230B662FDA3C800050F49E /* SkyFullUITests */,
+				3E230B482FDA3C7E0050F49E /* Products */,
+				3E230B9D2FDA3E130050F49E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E230B482FDA3C7E0050F49E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B472FDA3C7E0050F49E /* SkyFull.app */,
+				3E230B592FDA3C7F0050F49E /* SkyFullTests.xctest */,
+				3E230B632FDA3C800050F49E /* SkyFullUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E230B492FDA3C7E0050F49E /* SkyFull */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B7B2FDA3CA40050F49E /* Models */,
+				3E230B802FDA3CA90050F49E /* Services */,
+				3E230BA02FDA3E8F0050F49E /* Repositories */,
+				3E230B852FDA3CB00050F49E /* ViewModels */,
+				3E230BEE2FDA42D20050F49E /* Views */,
+				3E230B762FDA3C980050F49E /* DI */,
+				3E230B4A2FDA3C7E0050F49E /* SkyFullApp.swift */,
+				3E230B502FDA3C7F0050F49E /* Assets.xcassets */,
+				3E230B522FDA3C7F0050F49E /* Preview Content */,
+			);
+			path = SkyFull;
+			sourceTree = "<group>";
+		};
+		3E230B522FDA3C7F0050F49E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B532FDA3C7F0050F49E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E230B5C2FDA3C7F0050F49E /* SkyFullTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B5D2FDA3C7F0050F49E /* SkyFullTests.swift */,
+			);
+			path = SkyFullTests;
+			sourceTree = "<group>";
+		};
+		3E230B662FDA3C800050F49E /* SkyFullUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B672FDA3C800050F49E /* SkyFullUITests.swift */,
+				3E230B692FDA3C800050F49E /* SkyFullUITestsLaunchTests.swift */,
+			);
+			path = SkyFullUITests;
+			sourceTree = "<group>";
+		};
+		3E230B762FDA3C980050F49E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B772FDA3C980050F49E /* AppAssembly.swift */,
+				3E230B782FDA3C980050F49E /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		3E230B7B2FDA3CA40050F49E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B7C2FDA3CA40050F49E /* SwiftDataModels.swift */,
+				3E230B7D2FDA3CA40050F49E /* WeatherModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E230B802FDA3CA90050F49E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B822FDA3CA90050F49E /* WeatherServiceProtocol.swift */,
+				3E230B812FDA3CA90050F49E /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E230B852FDA3CB00050F49E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E230B862FDA3CB00050F49E /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3E230B9D2FDA3E130050F49E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E230BA02FDA3E8F0050F49E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3E230BA12FDA3E8F0050F49E /* WeatherRepositoryProtocol.swift */,
+				3E230BA22FDA3E8F0050F49E /* WeatherRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3E230BEE2FDA42D20050F49E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E230BF32FDA42D20050F49E /* Components */,
+				3E230BEF2FDA42D20050F49E /* WeatherView.swift */,
+				3E230BF02FDA42D20050F49E /* LocationSearchView.swift */,
+				3E230BF12FDA42D20050F49E /* LocationDetailView.swift */,
+				3E230BF22FDA42D20050F49E /* WeatherBackground.swift */,
+				3E230BF72FDA42D20050F49E /* HourlyForecastView.swift */,
+				3E230BF82FDA42D20050F49E /* ContentView.swift */,
+			);
+			name = Views;
+			path = "../../../Downloads/WeatherCast 2/Views";
+			sourceTree = "<group>";
+		};
+		3E230BF32FDA42D20050F49E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E230BF42FDA42D20050F49E /* TopSectionView.swift */,
+				3E230BF52FDA42D20050F49E /* ForecastSectionView.swift */,
+				3E230BF62FDA42D20050F49E /* BottomSectionView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E230B462FDA3C7E0050F49E /* SkyFull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E230B6D2FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFull" */;
+			buildPhases = (
+				3E230B432FDA3C7E0050F49E /* Sources */,
+				3E230B442FDA3C7E0050F49E /* Frameworks */,
+				3E230B452FDA3C7E0050F49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFull;
+			packageProductDependencies = (
+				3E230B9E2FDA3E130050F49E /* Swinject */,
+			);
+			productName = SkyFull;
+			productReference = 3E230B472FDA3C7E0050F49E /* SkyFull.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E230B582FDA3C7F0050F49E /* SkyFullTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E230B702FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFullTests" */;
+			buildPhases = (
+				3E230B552FDA3C7F0050F49E /* Sources */,
+				3E230B562FDA3C7F0050F49E /* Frameworks */,
+				3E230B572FDA3C7F0050F49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E230B5B2FDA3C7F0050F49E /* PBXTargetDependency */,
+			);
+			name = SkyFullTests;
+			productName = SkyFullTests;
+			productReference = 3E230B592FDA3C7F0050F49E /* SkyFullTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E230B622FDA3C800050F49E /* SkyFullUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E230B732FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFullUITests" */;
+			buildPhases = (
+				3E230B5F2FDA3C800050F49E /* Sources */,
+				3E230B602FDA3C800050F49E /* Frameworks */,
+				3E230B612FDA3C800050F49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E230B652FDA3C800050F49E /* PBXTargetDependency */,
+			);
+			name = SkyFullUITests;
+			productName = SkyFullUITests;
+			productReference = 3E230B632FDA3C800050F49E /* SkyFullUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E230B3F2FDA3C7D0050F49E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3E230B462FDA3C7E0050F49E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					3E230B582FDA3C7F0050F49E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3E230B462FDA3C7E0050F49E;
+					};
+					3E230B622FDA3C800050F49E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3E230B462FDA3C7E0050F49E;
+					};
+				};
+			};
+			buildConfigurationList = 3E230B422FDA3C7D0050F49E /* Build configuration list for PBXProject "SkyFull" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E230B3E2FDA3C7D0050F49E;
+			packageReferences = (
+				3E230B9C2FDA3E040050F49E /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			productRefGroup = 3E230B482FDA3C7E0050F49E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E230B462FDA3C7E0050F49E /* SkyFull */,
+				3E230B582FDA3C7F0050F49E /* SkyFullTests */,
+				3E230B622FDA3C800050F49E /* SkyFullUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E230B452FDA3C7E0050F49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E230B542FDA3C7F0050F49E /* Preview Assets.xcassets in Resources */,
+				3E230B512FDA3C7F0050F49E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B572FDA3C7F0050F49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B612FDA3C800050F49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E230B432FDA3C7E0050F49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E230BF92FDA42D20050F49E /* WeatherView.swift in Sources */,
+				3E230BFA2FDA42D20050F49E /* LocationSearchView.swift in Sources */,
+				3E230BFF2FDA42D20050F49E /* BottomSectionView.swift in Sources */,
+				3E230BA42FDA3E8F0050F49E /* WeatherRepository.swift in Sources */,
+				3E230B832FDA3CA90050F49E /* WeatherService.swift in Sources */,
+				3E230B7F2FDA3CA40050F49E /* WeatherModels.swift in Sources */,
+				3E230B7E2FDA3CA40050F49E /* SwiftDataModels.swift in Sources */,
+				3E230B792FDA3C980050F49E /* AppAssembly.swift in Sources */,
+				3E230C012FDA42D20050F49E /* ContentView.swift in Sources */,
+				3E230C002FDA42D20050F49E /* HourlyForecastView.swift in Sources */,
+				3E230B872FDA3CB00050F49E /* WeatherViewModel.swift in Sources */,
+				3E230BFC2FDA42D20050F49E /* WeatherBackground.swift in Sources */,
+				3E230B7A2FDA3C980050F49E /* DIContainer.swift in Sources */,
+				3E230B842FDA3CA90050F49E /* WeatherServiceProtocol.swift in Sources */,
+				3E230BFE2FDA42D20050F49E /* ForecastSectionView.swift in Sources */,
+				3E230BFB2FDA42D20050F49E /* LocationDetailView.swift in Sources */,
+				3E230B4B2FDA3C7E0050F49E /* SkyFullApp.swift in Sources */,
+				3E230BA32FDA3E8F0050F49E /* WeatherRepositoryProtocol.swift in Sources */,
+				3E230BFD2FDA42D20050F49E /* TopSectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B552FDA3C7F0050F49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E230B5E2FDA3C7F0050F49E /* SkyFullTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E230B5F2FDA3C800050F49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E230B682FDA3C800050F49E /* SkyFullUITests.swift in Sources */,
+				3E230B6A2FDA3C800050F49E /* SkyFullUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E230B5B2FDA3C7F0050F49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E230B462FDA3C7E0050F49E /* SkyFull */;
+			targetProxy = 3E230B5A2FDA3C7F0050F49E /* PBXContainerItemProxy */;
+		};
+		3E230B652FDA3C800050F49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E230B462FDA3C7E0050F49E /* SkyFull */;
+			targetProxy = 3E230B642FDA3C800050F49E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E230B6B2FDA3C800050F49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E230B6C2FDA3C800050F49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E230B6E2FDA3C800050F49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkyFull/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E230B6F2FDA3C800050F49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkyFull/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E230B712FDA3C800050F49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFullTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyFull.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyFull";
+			};
+			name = Debug;
+		};
+		3E230B722FDA3C800050F49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFullTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyFull.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyFull";
+			};
+			name = Release;
+		};
+		3E230B742FDA3C800050F49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFullUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyFull;
+			};
+			name = Debug;
+		};
+		3E230B752FDA3C800050F49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.SkyFullUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyFull;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E230B422FDA3C7D0050F49E /* Build configuration list for PBXProject "SkyFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E230B6B2FDA3C800050F49E /* Debug */,
+				3E230B6C2FDA3C800050F49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E230B6D2FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E230B6E2FDA3C800050F49E /* Debug */,
+				3E230B6F2FDA3C800050F49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E230B702FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFullTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E230B712FDA3C800050F49E /* Debug */,
+				3E230B722FDA3C800050F49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E230B732FDA3C800050F49E /* Build configuration list for PBXNativeTarget "SkyFullUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E230B742FDA3C800050F49E /* Debug */,
+				3E230B752FDA3C800050F49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E230B9C2FDA3E040050F49E /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E230B9E2FDA3E130050F49E /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E230B9C2FDA3E040050F49E /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3E230B3F2FDA3C7D0050F49E /* Project object */;
+}
