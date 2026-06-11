@@ -8,7 +8,7 @@ A native iOS weather application built with SwiftUI as part of the **JET (Java E
 
 | Morning Theme | Evening Theme | Hourly Forecast | Saved Locations |
 |:---:|:---:|:---:|:---:|
-| <img src="screenshots/morning.png" width="180"/> | <img src="screenshots/skyfull2.png" width="180"/> | <img src="screenshots/skyfull3.png" width="180"/> | <img src="screenshots/skyfull1.png" width="180"/> |
+| <img src="SkyFull/screenshots/skyFull1.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull2.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull3.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull1.jpeg" width="180"/> |
 ---
 
 ## Features
