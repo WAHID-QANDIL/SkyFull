@@ -1,10 +1,5 @@
 import SwiftUI
 
-// MARK: - WeatherBackground
-
-/// Full-bleed background that switches between morning and evening themes.
-/// Add "morningBG" and "eveningBG" image sets to Assets.xcassets to use
-/// real photos; the gradient below is the automatic fallback.
 struct WeatherBackground: View {
     let isMorning: Bool
 
@@ -18,8 +13,6 @@ struct WeatherBackground: View {
         }
         .ignoresSafeArea()
     }
-
-    // MARK: - Gradient Fallback
 
     @ViewBuilder
     private var gradientLayer: some View {
