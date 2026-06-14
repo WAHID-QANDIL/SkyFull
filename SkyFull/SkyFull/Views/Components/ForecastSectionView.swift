@@ -1,12 +1,5 @@
 import SwiftUI
 
-// MARK: - ForecastSectionView
-//
-// FIX: replaced NavigationLink { destination } label: { ... } with
-// NavigationLink(value: day) — the old form overrides foregroundStyle on
-// its label inside a ZStack/ScrollView, making row text invisible.
-// NavigationLink(value:) delegates colour entirely to the label view.
-
 struct ForecastSectionView: View {
     let forecastDays: [ForecastDay]
     let textColor: Color
@@ -18,8 +11,6 @@ struct ForecastSectionView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-
-            // Section header
             HStack(spacing: 6) {
                 Image(systemName: "calendar")
                     .font(.caption)
@@ -35,12 +26,10 @@ struct ForecastSectionView: View {
 
             ForEach(Array(forecastDays.enumerated()), id: \.element.id) { idx, day in
 
-                // NavigationLink(value:) — label renders exactly as written,
-                // no colour override from the link itself.
                 NavigationLink(value: day) {
                     ForecastRow(day: day, textColor: textColor)
                 }
-                .buttonStyle(.plain)            // removes default blue tint
+                .buttonStyle(.plain)
 
                 if idx < forecastDays.count - 1 { divider }
             }
@@ -65,8 +54,6 @@ struct ForecastSectionView: View {
     }
 }
 
-// MARK: - ForecastRow
-
 private struct ForecastRow: View {
     let day: ForecastDay
     let textColor: Color
@@ -76,7 +63,7 @@ private struct ForecastRow: View {
 
             Text(day.dayLabel)
                 .font(.callout.weight(.medium))
-                .foregroundStyle(textColor)          // ← foregroundStyle, not foregroundColor
+                .foregroundStyle(textColor)
                 .frame(minWidth: 82, alignment: .leading)
 
             AsyncImage(url: day.day.condition.iconURL) { phase in
@@ -97,6 +84,6 @@ private struct ForecastRow: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .contentShape(Rectangle())               // makes full row tappable
+        .contentShape(Rectangle())
     }
 }
