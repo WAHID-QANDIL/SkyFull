@@ -1,9 +1,5 @@
 import SwiftUI
 
-// MARK: - LocationDetailView
-
-/// Displays the full weather screen for a saved (non-current) location.
-/// Gets its own `WeatherViewModel` instance from the DI container.
 struct LocationDetailView: View {
     let location: SavedLocationModel
 
@@ -16,7 +12,6 @@ struct LocationDetailView: View {
                 .ignoresSafeArea()
         }
         .toolbar {
-            // Show the city name centred in the navigation bar
             ToolbarItem(placement: .principal) {
                 Text(location.name)
                     .font(.headline)
