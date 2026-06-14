@@ -171,15 +171,3 @@ If you see ATS errors, add to `Info.plist`:
 Query parameter `q` accepts a city name (`Cairo`), coordinates (`30.07,31.25`), or an IP address.
 
 ---
-
-## Delivery
-
-| | |
-|---|---|
-| **Course** | JET — ITI Professional Diploma, Mobile Applications (Native) |
-| **Branch** | Smart Village |
-| **Instructor** | Asmaa Ghonaim |
-| **Start date** | 3 June 2026 |
-| **Deadline** | 11 June 2026 |
-| **Submission** | ZIP the `.xcodeproj` folder → email to `asmaaghoname204@gmail.com` |
-| **Subject** | `PTP - SwiftUIProject - SV-YourFullName` |
