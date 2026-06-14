@@ -10,11 +10,6 @@ A native iOS weather application built with SwiftUI as part of the **JET (Java E
 |:---:|:---:|:---:|:---:|
 | <img src="SkyFull/screenshots/skyFull4.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull2.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull3.jpeg" width="180"/> | <img src="SkyFull/screenshots/skyFull1.jpeg" width="180"/> |
 
-## Video Demo
-
-[![Watch the demo](SkyFull/screenshots/skyFull4.jpeg)](SkyFull/screenshots/skyFullDemo.mp4)
----
-
 ## Features
 
 - **Time-aware theming** — morning background (05:00–17:59) with black text; evening background (18:00–04:59) with white text
@@ -27,6 +22,10 @@ A native iOS weather application built with SwiftUI as part of the **JET (Java E
 - **Saved Locations** — pin any city; persisted across launches via SwiftData; swipe-to-delete
 - **Offline-graceful caching** — last known weather shown instantly; stale cache served when network is unavailable
 
+---
+## Video Demo
+
+[![Watch the demo](SkyFull/screenshots/skyFull4.jpeg)](SkyFull/screenshots/skyFullDemo.mp4)
 ---
 
 ## Tech Stack
