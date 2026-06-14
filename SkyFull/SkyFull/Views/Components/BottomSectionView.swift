@@ -1,11 +1,5 @@
 import SwiftUI
 
-// MARK: - BottomSectionView
-//
-// FIX: replaced LazyVGrid with explicit VStack + HStack layout.
-// LazyVGrid skips off-screen items at first render, which caused the
-// left-column cards (Visibility, Feels Like) to appear blank.
-
 struct BottomSectionView: View {
     let current: CurrentWeather
     let textColor: Color
@@ -62,11 +56,11 @@ private struct DetailCard: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(textColor.opacity(0.70))   // ← foregroundStyle
+                .foregroundStyle(textColor.opacity(0.70))
 
             Text(value)
                 .font(.system(size: 28, weight: .light))
-                .foregroundStyle(textColor)                  // ← foregroundStyle
+                .foregroundStyle(textColor)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
