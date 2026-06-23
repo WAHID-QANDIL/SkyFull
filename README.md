@@ -1,4 +1,4 @@
-# WeatherCast 🌤️
+# SkyFull 🌤️
 
 A native iOS weather application built with SwiftUI as part of the **JET (Java Education and Technology Services) — ITI Professional 9-Month Diploma in Mobile Applications Development**.
 
